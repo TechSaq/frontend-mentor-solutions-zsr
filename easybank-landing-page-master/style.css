@@ -48,6 +48,9 @@ body {
     font-size: 0.9rem;
 }
 
+
+/* Hero section -- start */
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -92,3 +95,52 @@ body {
     transform: translateX(160px) scalex(0.8) scale(1.1);
     clip-path: inset(0 128px 0 0);
 }
+
+
+/* Hero Section -- end */
+
+
+/* choose -- start */
+
+.choose {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.choose .why-choose {
+    color: #2D314D;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.choose .choose-desc {
+    color: hsl(233, 8%, 62%);
+    margin: 40px 0 40px 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.choose .reason-wrappper {
+    display: flex;
+}
+
+.choose .reason-wrappper .reason {
+    padding-right: 35px;
+}
+
+.choose .reason-wrappper .icon-name {
+    color: #2D314D;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.choose .reason-wrappper .icon-desc {
+    color: hsl(233, 8%, 62%);
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+}
+
+.
+/* choose -- end */
