@@ -142,5 +142,61 @@ body {
     font-size: 0.9rem;
 }
 
-.
+
 /* choose -- end */
+
+
+/* Latest article -- start */
+
+.latest-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.latest-wrapper .latest-header {
+    color: #2D314D;
+    margin: 150px 0 0 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.latest-wrapper .article-wrapper {
+    display: flex;
+}
+
+.latest-wrapper .article-wrapper .article {
+    margin-right: 30px;
+}
+
+.latest-wrapper .article .article-img {
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0.5);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.latest-wrapper .article .author {
+    color: hsl(233, 8%, 62%);
+    margin-top: -50px;
+    font-size: 0.8rem;
+}
+
+.latest-wrapper .article .title {
+    color: #2D314D;
+    font-weight: 300;
+    margin: 20px 0 10px 0;
+    font-size: 0.9rem;
+    width: 75%;
+}
+
+.latest-wrapper .article .article-snap {
+    color: hsl(233, 8%, 62%);
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+
+/* Latest article -- end */
