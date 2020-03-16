@@ -200,3 +200,17 @@ body {
 
 
 /* Latest article -- end */
+
+
+/* footer -- start */
+
+.footer {
+    width: 100%;
+    background-color: #2D314D;
+    display: flex;
+    margin-top: 200px;
+    padding: 3% 10%;
+}
+
+
+/* footer -- end */
