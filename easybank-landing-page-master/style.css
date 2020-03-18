@@ -279,10 +279,15 @@ body {
     .navbar {
         height: 80px;
     }
+    .navbar .brand {
+        position: absolute;
+        left: 30px;
+    }
     .navbar .menu,
     .navbar .req-invite {
         visibility: hidden;
         width: 0;
+        transition: all 0.3s ease-in;
     }
     .navbar .hamburger {
         visibility: visible;
@@ -291,6 +296,44 @@ body {
     }
     .navbar .hamburger .line {
         height: 20px;
+    }
+    .hamburger.active .cross {
+        visibility: visible;
+        position: absolute;
+        right: 30px;
+    }
+    .hamburger .cross {
+        visibility: hidden;
+    }
+    .hamburger.active .line {
+        visibility: hidden;
+    }
+    .navbar.active {
+        padding: 5px;
+    }
+    .navbar.active .menu {
+        position: relative;
+        top: 170px;
+        background: white;
+        display: block;
+        visibility: visible;
+        left: 0;
+        margin: 0 4%;
+        padding: 30px 0;
+        border-radius: 5px;
+    }
+    .navbar.active .menu li {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .navbar.active .menu li a {
+        font-size: 1.3rem;
+        color: #2D314D;
+    }
+    .hero.overlay .product-snaps,
+    .hero.overlay {
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0.9;
     }
     /* navbar -- end */
     /* hero -- satrt */
