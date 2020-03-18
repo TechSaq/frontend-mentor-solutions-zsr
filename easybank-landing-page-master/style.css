@@ -51,6 +51,11 @@ body {
     font-size: 0.9rem;
 }
 
+.req-invite:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
 .navbar .hamburger {
     visibility: hidden;
 }
@@ -232,6 +237,11 @@ body {
     transform: scale(1.1);
 }
 
+.footer .social-contacts .icon:hover {
+    fill: saddlebrown;
+    cursor: pointer;
+}
+
 .footer .menu-wrapper {
     display: flex;
     justify-content: space-between;
@@ -245,6 +255,10 @@ body {
 .footer .menu-wrapper li a {
     color: white;
     text-decoration: none;
+}
+
+.footer .menu-wrapper li a:hover {
+    color: hsl(136, 65%, 51%);
 }
 
 .footer .menu-wrapper .menu1,
