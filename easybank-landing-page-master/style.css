@@ -358,7 +358,7 @@ body {
     }
     .navbar.active .menu {
         position: relative;
-        top: 170px;
+        top: 200px;
         background: white;
         display: block;
         visibility: visible;
@@ -384,6 +384,7 @@ body {
     /* hero -- satrt */
     .hero {
         flex-direction: column-reverse;
+        overflow-x: hidden;
     }
     .hero .product-snaps {
         background: url("./images/bg-intro-mobile.svg") cover no-repeat;
@@ -424,6 +425,9 @@ body {
     .choose .reason-wrappper {
         display: flex;
         flex-direction: column;
+    }
+    .choose .reason-wrappper .reason {
+        padding-right: 0;
     }
     .choose .reason .icon {
         margin-top: 70px;
