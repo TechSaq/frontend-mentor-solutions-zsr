@@ -1,48 +1,99 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body * {
-    border: 1px solid red;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 10vh 90vh 100vh 100vh 30vh 40vh;
-    grid-template-areas: "header header" "hero-started hero-image" "why features" "testimonials-wrapper testimonials-wrapper" "started-wrapper started-wrapper" "footer footer";
-}
-
-.header {
-    grid-area: header;
-}
-
-.hero-started {
-    grid-area: hero-started;
-}
-
-.hero-image {
-    grid-area: hero-image;
-}
-
-.why {
-    grid-area: why;
-}
-
-.features {
-    grid-area: features;
-}
-
-.testimonials-wrapper {
-    grid-area: testimonials-wrapper;
-}
-
-.started-wrapper {
-    grid-area: started-wrapper;
-}
-
-.footer {
-    grid-area: footer;
-}
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body * {
+        box-sizing: border-box;
+        font-family: 'Be Vietnam', sans-serif;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 35vh 65vh 100vh 100vh 30vh 40vh;
+        grid-template-areas: "header header" "hero-started hero-image" "why features" "testimonials-wrapper testimonials-wrapper" "started-wrapper started-wrapper" "footer footer";
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    .header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar {
+        flex: 1;
+    }
+    
+    .navbar .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        margin: 0 auto;
+    }
+    
+    .navbar .menu .item {
+        padding: 2px 10px;
+    }
+    
+    .navbar .menu .item a {
+        color: hsl(228, 39%, 23%);
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .btn-get-started {
+        width: 140px;
+        border: none;
+        border-radius: 30px;
+        background: hsl(12, 88%, 59%);
+        color: hsl(0, 0%, 98%);
+        height: 40px;
+        font-size: 12px;
+        font-weight: 700;
+        -webkit-box-shadow: 0 15px 20px -12px hsl(12, 88%, 59%);
+        -moz-box-shadow: 0 15px 20px -12px hsl(12, 88%, 59%);
+        box-shadow: 0 15px 20px -12px hsl(12, 88%, 59%);
+    }
+    
+    .hero-started {
+        grid-area: hero-started;
+    }
+    
+    .hero-image {
+        grid-area: hero-image;
+    }
+    
+    .why {
+        grid-area: why;
+    }
+    
+    .features {
+        grid-area: features;
+    }
+    
+    .testimonials-wrapper {
+        grid-area: testimonials-wrapper;
+    }
+    
+    .started-wrapper {
+        grid-area: started-wrapper;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
