@@ -101,8 +101,55 @@
         grid-area: why;
     }
     
-    .features {
+    .why .why-title {
+        font-weight: 700;
+        font-size: 2.5rem;
+        padding-right: 50px;
+        color: hsl(228, 39%, 23%);
+    }
+    
+    .why .why-description {
+        color: hsl(227, 12%, 61%);
+        margin-top: 30px;
+        margin-right: 140px;
+    }
+    
+    .features-wrapper {
         grid-area: features;
+        padding-left: 40px;
+    }
+    
+    .features-wrapper .features {
+        display: flex;
+    }
+    
+    .features-wrapper .features .number {
+        background: hsl(12, 88%, 59%);
+        border: none;
+        border-radius: 20px;
+        height: 30px;
+        padding: 6px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: hsl(0, 0%, 98%);
+    }
+    
+    .features-wrapper .features .feature {
+        margin-left: 30px;
+    }
+    
+    .features-wrapper .features .feature .title {
+        font-size: 14px;
+        font-weight: 700;
+        color: hsl(228, 39%, 23%);
+    }
+    
+    .features-wrapper .features .feature .description {
+        color: hsl(227, 12%, 61%);
+        font-size: 14px;
+        margin-bottom: 30px;
+        margin-top: 10px;
     }
     
     .testimonials-wrapper {
