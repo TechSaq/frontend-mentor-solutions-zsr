@@ -21,7 +21,7 @@
     .container {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 20vh 80vh 100vh 100vh 30vh 40vh;
+        grid-template-rows: 20vh 80vh 90vh 100vh 30vh 40vh;
         grid-template-areas: "header header" "hero-started hero-image" "why features" "testimonials-wrapper testimonials-wrapper" "started-wrapper started-wrapper" "footer footer";
         width: 75%;
         margin: 0 auto;
@@ -99,6 +99,7 @@
     
     .why {
         grid-area: why;
+        margin-top: 130px;
     }
     
     .why .why-title {
@@ -117,6 +118,7 @@
     .features-wrapper {
         grid-area: features;
         padding-left: 40px;
+        margin-top: 120px;
     }
     
     .features-wrapper .features {
@@ -154,6 +156,53 @@
     
     .testimonials-wrapper {
         grid-area: testimonials-wrapper;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 -12.5%;
+    }
+    
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .testimonials-wrapper .title {
+        font-size: 2rem;
+        color: hsl(228, 39%, 23%);
+        font-weight: 700;
+    }
+    
+    .testimonials-wrapper .testimonials {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    
+    .testimonials-wrapper .testimonials .testimonial {
+        flex: 1 0 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        margin: 0 40px;
+    }
+    
+    .testimonials-wrapper .testimonials .testimonial .name {
+        margin: 30px 0;
+        color: hsl(228, 39%, 23%);
+        font-weight: 700;
+    }
+    
+    .testimonials-wrapper .testimonials .testimonial .review {
+        color: hsl(227, 12%, 61%);
+        text-align: center;
+        line-height: 25px;
     }
     
     .started-wrapper {
