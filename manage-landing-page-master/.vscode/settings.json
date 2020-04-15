@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "'Courier Prime Code ','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
+}
