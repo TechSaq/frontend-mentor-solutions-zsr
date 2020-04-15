@@ -54,3 +54,21 @@ sliderArea.addEventListener('touchend', handleEnd);
 sliderArea.addEventListener('touchmove', handleMove);
 
 // testimonial slide end
+
+
+// mobile navbar started
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.querySelector('.navbar');
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const closeIcon = document.querySelector('.close-icon');
+const container = document.querySelector('.container');
+
+const showMenu = () => {
+    navbar.classList.toggle('active');
+    hamburgerIcon.classList.toggle('active');
+    closeIcon.classList.toggle('active');
+    container.classList.toggle('active');
+}
+
+hamburger.addEventListener('click', showMenu);
+// mobile navbar ended
